@@ -318,11 +318,11 @@ export function ImageManager() {
                                     </div>
                                     <div style={{ height: "160px", overflow: "hidden" }}>
                                         <img
-                                            src={getFullUrl(img.url)}
-                                            alt={img.caption || "Image"}
+                                             src="https://res.cloudinary.com/dcym9gtqr/image/upload/v1776704602/11539820_gvv7p0.webp"
+                                             alt="Image"
                                             style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                             onError={(e) => {
-                                                (e.target as HTMLImageElement).src = "data:image/webp+xml,%3Csvg xmlns='https://res.cloudinary.com/dcym9gtqr/image/upload/v1776704602/11539820_gvv7p0.webp'";
+                                                (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='160'%3E%3Crect fill='%23f1f5f9' width='220' height='160'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='%2394a3b8' dy='.3em' font-size='13'%3EImage not found%3C/text%3E%3C/svg%3E";
                                             }}
                                         />
                                     </div>
