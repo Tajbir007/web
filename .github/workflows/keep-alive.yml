@@ -1,6 +1,6 @@
 name: Keep Render Server Alive
 
-onon:
+on:
   schedule:
     - cron: '0,14,28,42,56 * * * *'  # Every ~14 minutes
   workflow_dispatch:          # Allow manual trigger
