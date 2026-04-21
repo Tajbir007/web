@@ -12,7 +12,7 @@ jobs:
       - name: Ping Render Server
         run: |
           echo "Pinging server at $(date)"
-          response=$(curl -s -o /dev/null -w "%{http_code}" https://accbc-backend-server.onrender.com)
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://accbc-backend-server.onrender.com/api)
           echo "Response code: $response"
           if [ "$response" -ge 200 ] && [ "$response" -lt 400 ]; then
             echo "✅ Server is up!"
